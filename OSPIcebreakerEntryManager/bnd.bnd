@@ -1,0 +1,4 @@
+Bundle-Name: OSPIcebreakerEntryManager
+Bundle-SymbolicName: com.osp.icicle
+Bundle-Version: 1.0.0
+Export-Package: com.osp.icicle.constants
