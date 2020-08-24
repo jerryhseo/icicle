@@ -1,22 +1,16 @@
 <?xml version="1.0"?>
 
 <model-hints>
-	<model name="com.osp.icicle.model.IcebreakerEntry">
-		<field name="uuid" type="String" />
-		<field name="icebreakerEntryId" type="long" />
+	<model name="com.osp.icicle.model.OSPFile">
+		<field name="ospFileId" type="long" />
 		<field name="groupId" type="long" />
 		<field name="companyId" type="long" />
 		<field name="userId" type="long" />
 		<field name="userName" type="String" />
 		<field name="createDate" type="Date" />
 		<field name="modifiedDate" type="Date" />
-		<field name="status" type="int" />
 		<field name="name" type="String" />
-		<field name="type" type="String" />
-		<field name="ibIp" type="String" />
-		<field name="ibPort" type="String" />
-		<field name="ibUserId" type="String" />
-		<field name="ibUserPassword" type="String" />
-		<field localized="true" name="description" type="String" />
+		<field name="size" type="long" />
+		<field name="status" type="int" />
 	</model>
 </model-hints>
