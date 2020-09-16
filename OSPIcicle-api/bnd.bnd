@@ -6,7 +6,6 @@ Export-Package: \
 	com.osp.icicle.model,\
 	com.osp.icicle.service,\
 	com.osp.icicle.service.persistence,\
-	com.osp.icicle.web.internal.security.permission.resource,\
 	com.osp.icicle.constants
 -check: EXPORTS
 -includeresource: META-INF/service.xml=../OSPIcicle-service/service.xml

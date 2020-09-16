@@ -14,8 +14,11 @@
 
 package com.osp.icicle.service.impl;
 
+import com.liferay.document.library.kernel.service.DLFileEntryLocalServiceUtil;
+import com.liferay.document.library.kernel.store.DLStoreUtil;
 import com.liferay.portal.aop.AopService;
-
+import com.liferay.portal.kernel.util.FileUtil;
+import com.osp.icicle.constants.OSPSecurityLevels;
 import com.osp.icicle.service.base.OSPFileLocalServiceBaseImpl;
 
 import java.io.File;
@@ -41,34 +44,17 @@ import org.osgi.service.component.annotations.Component;
 )
 public class OSPFileLocalServiceImpl extends OSPFileLocalServiceBaseImpl {
 
-	public void connectServer(
-			String serverIP, 
-			String port, 
-			String userId, 
-			String password 
-			) {
-		
-	}
+	/**
+	 * For local mounted repository 
+	 */
+	private
 	
-	public void uploadFile( 
-			String serverIP, 
-			String port, 
-			String userId, 
-			String password, 
+	public void saveFile(
 			File srcFile, 
 			String targetDir, 
 			boolean overlap,
-			int security ) {
+			OSPSecurityLevels security ) {
 		
-	}
-	
-	public void downloadFile(
-		String serverIP, 
-		String port, 
-		String userId, 
-		String password, 
-		String targetDir, 
-		int security) {
 	}
 	
 	public void deleteFile() {
@@ -87,15 +73,26 @@ public class OSPFileLocalServiceImpl extends OSPFileLocalServiceBaseImpl {
 		
 	}
 	
-	public void execute() {
-		
-	}
-	
-	public void sendCommand() {
+	public void executeCommand() {
 		
 	}
 	
 	public void sendEMail() {
 		
 	}
+	
+	/**
+	 * For remote repository
+	 */
+	
+	public void downloadFile(
+			String serverIP, 
+			String port, 
+			String userId, 
+			String password, 
+			String targetDir, 
+			int security) {
+	}
+	
+	
 }
